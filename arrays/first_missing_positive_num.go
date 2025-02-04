@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // 41. First Missing Positive
 // Hard
 // Topics
@@ -49,8 +47,8 @@ func firstMissingPositive(nums []int) int {
 	return maxPositiveValue + 1
 }
 
-func main() {
-	fmt.Println(firstMissingPositive([]int{1, 2, 0}))
-	fmt.Println(firstMissingPositive([]int{3, 4, -1, 1}))
-	fmt.Println(firstMissingPositive([]int{7, 8, 9, 11, 12}))
-}
+// func main() {
+// 	fmt.Println(firstMissingPositive([]int{1, 2, 0}))
+// 	fmt.Println(firstMissingPositive([]int{3, 4, -1, 1}))
+// 	fmt.Println(firstMissingPositive([]int{7, 8, 9, 11, 12}))
+// }
