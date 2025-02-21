@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // 2348. Number of Zero-Filled Subarrays
 // Medium
 // Topics
@@ -65,10 +63,10 @@ func zeroFilledSubarray2(nums []int) int64 {
 	return int64(subArray)
 }
 
-func main() {
-	fmt.Println(zeroFilledSubarray([]int{1, 3, 0, 0, 2, 0, 0, 4}))
-	fmt.Println(zeroFilledSubarray([]int{0, 0, 0, 2, 0, 0}))
-	fmt.Println(zeroFilledSubarray([]int{2, 10, 2019}))
-	// fmt.Println(zeroFilledSubarray([]int{1, 3, 0, 0, 2, 0, 0, 4}))
+// func main() {
+// 	fmt.Println(zeroFilledSubarray([]int{1, 3, 0, 0, 2, 0, 0, 4}))
+// 	fmt.Println(zeroFilledSubarray([]int{0, 0, 0, 2, 0, 0}))
+// 	fmt.Println(zeroFilledSubarray([]int{2, 10, 2019}))
+// 	// fmt.Println(zeroFilledSubarray([]int{1, 3, 0, 0, 2, 0, 0, 4}))
 
-}
+// }
