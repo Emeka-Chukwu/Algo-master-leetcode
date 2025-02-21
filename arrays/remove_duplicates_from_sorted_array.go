@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // 26. Remove Duplicates from Sorted Array
 // Easy
 // Topics
@@ -69,10 +67,10 @@ func removeDuplicatesII(nums []int) int {
 	return len(result)
 }
 
-func main() {
-	fmt.Println(removeDuplicates([]int{1, 1, 2}))
-	fmt.Println(removeDuplicates([]int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}))
-	fmt.Println()
-	fmt.Println(removeDuplicatesII([]int{1, 1, 2}))
-	fmt.Println(removeDuplicatesII([]int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}))
-}
+// func main() {
+// 	fmt.Println(removeDuplicates([]int{1, 1, 2}))
+// 	fmt.Println(removeDuplicates([]int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}))
+// 	fmt.Println()
+// 	fmt.Println(removeDuplicatesII([]int{1, 1, 2}))
+// 	fmt.Println(removeDuplicatesII([]int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}))
+// }
