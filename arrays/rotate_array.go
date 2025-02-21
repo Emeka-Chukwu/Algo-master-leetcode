@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // 189. Rotate Array
 // Medium
 // Topics
@@ -55,17 +53,17 @@ func rotateLeft(nums []int, k int) []int {
 	return result
 }
 
-func main() {
-	fmt.Println(rotate([]int{1, 2, 3, 4, 5, 6, 7}, 1))
-	fmt.Println(rotate([]int{1, 2, 3, 4, 5, 6, 7}, 2))
-	fmt.Println(rotate([]int{1, 2, 3, 4, 5, 6, 7}, 3))
-	fmt.Println(rotate([]int{-1, -100, 3, 99}, 1))
-	fmt.Println(rotate([]int{-1, -100, 3, 99}, 2))
+// func main() {
+// 	fmt.Println(rotate([]int{1, 2, 3, 4, 5, 6, 7}, 1))
+// 	fmt.Println(rotate([]int{1, 2, 3, 4, 5, 6, 7}, 2))
+// 	fmt.Println(rotate([]int{1, 2, 3, 4, 5, 6, 7}, 3))
+// 	fmt.Println(rotate([]int{-1, -100, 3, 99}, 1))
+// 	fmt.Println(rotate([]int{-1, -100, 3, 99}, 2))
 
-	fmt.Println()
-	fmt.Println(rotateLeft([]int{1, 2, 3, 4, 5, 6, 7}, 1))
-	fmt.Println(rotateLeft([]int{1, 2, 3, 4, 5, 6, 7}, 2))
-	fmt.Println(rotateLeft([]int{1, 2, 3, 4, 5, 6, 7}, 3))
-	fmt.Println(rotateLeft([]int{-1, -100, 3, 99}, 1))
-	fmt.Println(rotateLeft([]int{-1, -100, 3, 99}, 2))
-}
+// 	fmt.Println()
+// 	fmt.Println(rotateLeft([]int{1, 2, 3, 4, 5, 6, 7}, 1))
+// 	fmt.Println(rotateLeft([]int{1, 2, 3, 4, 5, 6, 7}, 2))
+// 	fmt.Println(rotateLeft([]int{1, 2, 3, 4, 5, 6, 7}, 3))
+// 	fmt.Println(rotateLeft([]int{-1, -100, 3, 99}, 1))
+// 	fmt.Println(rotateLeft([]int{-1, -100, 3, 99}, 2))
+// }
