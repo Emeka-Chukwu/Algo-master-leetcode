@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // 6. Zigzag Conversion
 // Medium
 // Topics
@@ -61,10 +59,10 @@ func convert(s string, numRows int) string {
 	return result
 }
 
-func main() {
+// func main() {
 
-	fmt.Println(convert("PAYPALISHIRING", 3))
-	fmt.Println(convert("PAYPALISHIRING", 4))
-	fmt.Println(convert("A", 1))
+// 	fmt.Println(convert("PAYPALISHIRING", 3))
+// 	fmt.Println(convert("PAYPALISHIRING", 4))
+// 	fmt.Println(convert("A", 1))
 
-}
+// }
