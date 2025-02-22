@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // 151. Reverse Words in a String
 // Medium
 // Topics
@@ -54,10 +52,11 @@ func reverseWords(s string) string {
 	}
 	return newWords
 }
-func main() {
 
-	fmt.Println(reverseWords("the sky is blue"))
-	fmt.Println(reverseWords("  hello world  "))
-	fmt.Println(reverseWords("a good   example"))
+// func main() {
 
-}
+// 	fmt.Println(reverseWords("the sky is blue"))
+// 	fmt.Println(reverseWords("  hello world  "))
+// 	fmt.Println(reverseWords("a good   example"))
+
+// }
