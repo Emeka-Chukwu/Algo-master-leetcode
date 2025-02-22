@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -63,10 +62,10 @@ func filterAlphaNumeric(str string) string {
 	return string(results)
 }
 
-func main() {
+// func main() {
 
-	fmt.Println(isPalindrome("A man, a plan, a canal: Panama"))
-	fmt.Println(isPalindrome("race a car"))
-	fmt.Println(isPalindrome(" "))
+// 	fmt.Println(isPalindrome("A man, a plan, a canal: Panama"))
+// 	fmt.Println(isPalindrome("race a car"))
+// 	fmt.Println(isPalindrome(" "))
 
-}
+// }
