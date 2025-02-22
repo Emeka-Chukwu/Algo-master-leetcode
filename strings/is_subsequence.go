@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -39,16 +38,16 @@ func isSubsequence(s string, t string) bool {
 	return true
 }
 
-func main() {
-	t, s := "ahbgdc", "abc"
-	fmt.Println(isSubsequence(s, t))
-	fmt.Println(isSubsequence("axc", "ahbgdc"))
-	fmt.Println()
-	fmt.Println(isSubsequence2(s, t))
-	fmt.Println(isSubsequence2("axc", "ahbgdc"))
-}
+// func main() {
+// 	t, s := "ahbgdc", "abc"
+// 	fmt.Println(isSubsequence(s, t))
+// 	fmt.Println(isSubsequence("axc", "ahbgdc"))
+// 	fmt.Println()
+// 	fmt.Println(isSubsequence2(s, t))
+// 	fmt.Println(isSubsequence2("axc", "ahbgdc"))
+// }
 
-// ////// the matching doesn't need to be corderily, we can achieve 0(N) for both time and space complexity
+// ////// the matching doesn't need to be corderly, we can achieve 0(N) for both time and space complexity
 func isSubsequence2(s string, t string) bool {
 	availableCharacters := map[string]string{}
 	for i := 0; i < len(t); i++ {
