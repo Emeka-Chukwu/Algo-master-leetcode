@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // Code
 // Testcase
 // Test Result
@@ -67,15 +65,15 @@ func maxNumberOfBalloons(text string) int {
 	return minimumBallonCount
 }
 
-func main() {
-	fmt.Println(maxNumberOfBalloons2("nlaebbbolkllo"))
-	fmt.Println(maxNumberOfBalloons2("loonbalxballpoon"))
-	fmt.Println(maxNumberOfBalloons2("leetcod"))
-	fmt.Println()
-	fmt.Println(maxNumberOfBalloons("nlaebbbolkllo"))
-	fmt.Println(maxNumberOfBalloons("loonbalxballpoon"))
-	fmt.Println(maxNumberOfBalloons("leetcod"))
-}
+// func main() {
+// 	fmt.Println(maxNumberOfBalloons2("nlaebbbolkllo"))
+// 	fmt.Println(maxNumberOfBalloons2("loonbalxballpoon"))
+// 	fmt.Println(maxNumberOfBalloons2("leetcod"))
+// 	fmt.Println()
+// 	fmt.Println(maxNumberOfBalloons("nlaebbbolkllo"))
+// 	fmt.Println(maxNumberOfBalloons("loonbalxballpoon"))
+// 	fmt.Println(maxNumberOfBalloons("leetcod"))
+// }
 
 func maxNumberOfBalloons2(text string) int {
 	freq := make(map[rune]int)
