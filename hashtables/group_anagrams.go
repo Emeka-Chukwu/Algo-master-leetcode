@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // 49. Group Anagrams
 // Medium
 // Topics
@@ -55,8 +53,8 @@ func groupAnagrams(strs []string) [][]string {
 	return results
 }
 
-func main() {
-	fmt.Println(groupAnagrams([]string{"eat", "tea", "tan", "ate", "nat", "bat"}))
-	fmt.Println(groupAnagrams([]string{""}))
-	fmt.Println(groupAnagrams([]string{"a"}))
-}
+// func main() {
+// 	fmt.Println(groupAnagrams([]string{"eat", "tea", "tan", "ate", "nat", "bat"}))
+// 	fmt.Println(groupAnagrams([]string{""}))
+// 	fmt.Println(groupAnagrams([]string{"a"}))
+// }
