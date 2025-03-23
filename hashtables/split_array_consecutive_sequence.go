@@ -77,8 +77,8 @@ func isPossible(nums []int) bool {
 	return len(firstArray) >= 3 && len(secondArray) >= 3
 }
 
-func main() {
-	fmt.Println(isPossible([]int{1, 2, 3, 3, 4, 5}))
-	fmt.Println(isPossible([]int{1, 2, 3, 3, 4, 4, 5, 5}))
-	fmt.Println(isPossible([]int{1, 2, 3, 4, 4, 5}))
-}
+// func main() {
+// 	fmt.Println(isPossible([]int{1, 2, 3, 3, 4, 5}))
+// 	fmt.Println(isPossible([]int{1, 2, 3, 3, 4, 4, 5, 5}))
+// 	fmt.Println(isPossible([]int{1, 2, 3, 4, 4, 5}))
+// }
