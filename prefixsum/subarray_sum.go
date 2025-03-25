@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // 560. Subarray Sum Equals K
 // Medium
 // Topics
@@ -39,12 +37,12 @@ func subarraySum1(nums []int, k int) int {
 	return 0
 }
 
-func main() {
-	fmt.Println(subarraySum([]int{1, 1, 1}, 2))
-	fmt.Println(subarraySum([]int{1, 2, 3}, 3))
-	fmt.Println(subarraySum([]int{1, 2, 3, 3, 1, 1}, 4))
+// func main() {
+// 	fmt.Println(subarraySum([]int{1, 1, 1}, 2))
+// 	fmt.Println(subarraySum([]int{1, 2, 3}, 3))
+// 	fmt.Println(subarraySum([]int{1, 2, 3, 3, 1, 1}, 4))
 
-}
+// }
 
 func subarraySum(nums []int, k int) int {
 	count := 0
