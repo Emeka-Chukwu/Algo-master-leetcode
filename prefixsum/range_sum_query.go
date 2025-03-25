@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // 303. Range Sum Query - Immutable
 // Easy
 // Topics
@@ -58,12 +56,12 @@ type NumArray struct {
  * param_1 := obj.SumRange(left,right);
  */
 
-func main() {
-	obj := Constructor([]int{-2, 0, 3, -5, 2, -1})
-	fmt.Println(obj.SumRange(0, 2))
-	fmt.Println(obj.SumRange(2, 5))
-	fmt.Println(obj.SumRange(0, 5))
-}
+// func main() {
+// 	obj := Constructor([]int{-2, 0, 3, -5, 2, -1})
+// 	fmt.Println(obj.SumRange(0, 2))
+// 	fmt.Println(obj.SumRange(2, 5))
+// 	fmt.Println(obj.SumRange(0, 5))
+// }
 
 func Constructor(nums []int) NumArray {
 	var prefixSum []int = make([]int, len(nums)+1)
