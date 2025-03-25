@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // 11. Container With Most Water
 // Medium
 // Topics
@@ -65,8 +63,8 @@ func maxArea(height []int) int {
 	return maxArea
 }
 
-func main() {
-	fmt.Println(maxArea([]int{1, 8, 6, 2, 5, 4, 8, 3, 7}))
-	fmt.Println(maxArea([]int{1, 1}))
+// func main() {
+// 	fmt.Println(maxArea([]int{1, 8, 6, 2, 5, 4, 8, 3, 7}))
+// 	fmt.Println(maxArea([]int{1, 1}))
 
-}
+// }
