@@ -35,18 +35,16 @@ func checkInclusion(s1 string, s2 string) bool {
 	sumCheck := 0
 	for index, char := range s1 {
 		total += int(char)
-		dataLoop := []rune(string(s2[index]))
-		sumCheck += int(dataLoop[0])
+
+		sumCheck += int(s2[index])
 	}
 	if sumCheck == total {
 		return true
 	}
 	n := len(s1)
 	for index := n; index < len(s2); index++ {
-		data := []rune(string(s2[index-len(s1)]))
-		dataLoop := []rune(string(s2[index]))
-		sumCheck += int(dataLoop[0])
-		sumCheck -= int(data[0])
+		sumCheck += int(s2[index])
+		sumCheck -= int(s2[index-len(s1)])
 		if sumCheck == total {
 			return true
 		}
