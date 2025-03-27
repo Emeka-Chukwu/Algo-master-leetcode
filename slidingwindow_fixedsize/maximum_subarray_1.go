@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // Code
 // Testcase
 // Test Result
@@ -45,7 +43,7 @@ func findMaxAverage(nums []int, k int) float64 {
 	return float64(maxSum) / float64(k)
 }
 
-func main() {
-	fmt.Println(findMaxAverage([]int{1, 12, -5, -6, 50, 3}, 4))
-	fmt.Println(findMaxAverage([]int{5}, 1))
-}
+// func main() {
+// 	fmt.Println(findMaxAverage([]int{1, 12, -5, -6, 50, 3}, 4))
+// 	fmt.Println(findMaxAverage([]int{5}, 1))
+// }
