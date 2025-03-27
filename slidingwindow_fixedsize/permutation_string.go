@@ -35,7 +35,6 @@ func checkInclusion(s1 string, s2 string) bool {
 	sumCheck := 0
 	for index, char := range s1 {
 		total += int(char)
-
 		sumCheck += int(s2[index])
 	}
 	if sumCheck == total {
