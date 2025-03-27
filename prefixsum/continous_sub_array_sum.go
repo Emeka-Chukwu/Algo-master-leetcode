@@ -49,14 +49,14 @@ func checkSubarraySum(nums []int, k int) bool {
 	sum := 0
 	counterCheck[0] = -1
 
-	for i := 0; i < len(nums); i++ {
-		sum += nums[i]
+	for i, num := range nums {
+		sum += num
 		mod := sum % k
 		if mod < 0 {
 			mod += k
 		}
 		if value, found := counterCheck[mod]; found {
-			if i-value > 1 {
+			if i-value >= 2 {
 				return true
 			}
 		} else {
@@ -68,4 +68,6 @@ func checkSubarraySum(nums []int, k int) bool {
 
 func main() {
 	fmt.Println(checkSubarraySum([]int{23, 2, 4, 6, 7}, 6))
+	fmt.Println(checkSubarraySum([]int{23, 2, 4, 6, 7}, 6))
+	fmt.Println(checkSubarraySum([]int{23, 2, 4, 6, 7}, 13))
 }
