@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // Code
 // Testcase
 // Test Result
@@ -59,7 +57,7 @@ func subarraysDivByK(nums []int, k int) int {
 	return count
 }
 
-func main() {
-	fmt.Println(subarraysDivByK([]int{4, 5, 0, -2, -3, 1}, 5))
-	fmt.Println(subarraysDivByK([]int{5}, 9))
-}
+// func main() {
+// 	fmt.Println(subarraysDivByK([]int{4, 5, 0, -2, -3, 1}, 5))
+// 	fmt.Println(subarraysDivByK([]int{5}, 9))
+// }
