@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // Code
 // Testcase
 // Test Result
@@ -72,7 +70,7 @@ func maximumSubarraySum(nums []int, k int) int64 {
 	return int64(maxSum)
 }
 
-func main() {
-	fmt.Println(maximumSubarraySum([]int{1, 5, 4, 2, 9, 9, 9}, 3))
-	fmt.Println(maximumSubarraySum([]int{4, 4, 4}, 3))
-}
+// func main() {
+// 	fmt.Println(maximumSubarraySum([]int{1, 5, 4, 2, 9, 9, 9}, 3))
+// 	fmt.Println(maximumSubarraySum([]int{4, 4, 4}, 3))
+// }
