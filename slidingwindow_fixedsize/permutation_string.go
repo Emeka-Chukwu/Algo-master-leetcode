@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // Code
 // Testcase
 // Test Result
@@ -51,9 +49,9 @@ func checkInclusion(s1 string, s2 string) bool {
 	return false
 }
 
-func main() {
-	fmt.Println(checkInclusion("ab", "eidbaooo"))
-	fmt.Println(checkInclusion("ab", "eidboaoo"))
-}
+// func main() {
+// 	fmt.Println(checkInclusion("ab", "eidbaooo"))
+// 	fmt.Println(checkInclusion("ab", "eidboaoo"))
+// }
 
 // Input: s1 = "ab", s2 = "eidbaooo"
