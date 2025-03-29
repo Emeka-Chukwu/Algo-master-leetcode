@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // Code
 // Testcase
 // Test Result
@@ -77,8 +75,8 @@ func lengthOfLongestSubstringUsingRune(s string) int {
 	return maxLength
 }
 
-func main() {
-	fmt.Println(lengthOfLongestSubstring("abcabcbb"))
-	fmt.Println(lengthOfLongestSubstring("bbbbb"))
-	fmt.Println(lengthOfLongestSubstring("pwwkew"))
-}
+// func main() {
+// 	fmt.Println(lengthOfLongestSubstring("abcabcbb"))
+// 	fmt.Println(lengthOfLongestSubstring("bbbbb"))
+// 	fmt.Println(lengthOfLongestSubstring("pwwkew"))
+// }
