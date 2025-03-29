@@ -65,7 +65,14 @@ func main() {
 	fmt.Println(minSubArrayLen(7, []int{2, 3, 1, 2, 4, 3}))
 	fmt.Println(minSubArrayLen(4, []int{1, 4, 4}))
 	fmt.Println(minSubArrayLen(11, []int{1, 1, 1, 1, 1, 1, 1, 1}))
-	fmt.Println(minSubArrayLen(11, []int{1, 1, 1, 1, 1, 1, 1, 1, 2, 6, 5, 1}))
+	fmt.Println(minSubArrayLen(11, []int{1, 1, 1, 1, 1, 1, 1, 1, 2, 6, 4, 1}))
+
+	fmt.Println()
+
+	fmt.Println(minSubArrayLen2(7, []int{2, 3, 1, 2, 4, 3}))
+	fmt.Println(minSubArrayLen2(4, []int{1, 4, 4}))
+	fmt.Println(minSubArrayLen2(11, []int{1, 1, 1, 1, 1, 1, 1, 1}))
+	fmt.Println(minSubArrayLen2(11, []int{1, 1, 1, 1, 1, 1, 1, 1, 2, 6, 4, 1}))
 }
 
 // totalSum := 0
@@ -94,3 +101,25 @@ func main() {
 // 	}
 
 // 	return minimumNum
+
+func minSubArrayLen2(target int, nums []int) int {
+	n := len(nums)
+	totalNum := 0
+	minimumNum := n + 1
+	start := 0
+
+	for end := 0; end < n; end++ {
+		totalNum += nums[end]
+		for totalNum >= target {
+			totalNum -= nums[start]
+			if end-start+1 < minimumNum {
+				minimumNum = end - start + 1
+			}
+			start++
+		}
+	}
+	if minimumNum == n+1 {
+		return 0
+	}
+	return minimumNum
+}
