@@ -56,12 +56,10 @@ func characterReplacement(s string, k int) int {
 		if characterMaps[char] > maxFreq {
 			maxFreq = characterMaps[char]
 		}
-
 		if right-left+1-maxFreq > k {
 			characterMaps[s[left]]--
 			left++
 		}
-
 		if right-left+1 > maxFreq {
 			maxLength = right - left + 1
 		}
