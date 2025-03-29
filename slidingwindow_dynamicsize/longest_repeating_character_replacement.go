@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // Code
 // Testcase
 // Test Result
@@ -67,8 +65,8 @@ func characterReplacement(s string, k int) int {
 	return maxLength
 }
 
-func main() {
-	fmt.Println(characterReplacement("ABAB", 2))
-	fmt.Println(characterReplacement("AABABBA", 1))
+// func main() {
+// 	fmt.Println(characterReplacement("ABAB", 2))
+// 	fmt.Println(characterReplacement("AABABBA", 1))
 
-}
+// }
