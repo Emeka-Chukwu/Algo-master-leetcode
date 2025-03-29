@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -61,19 +60,19 @@ func minSubArrayLen(target int, nums []int) int {
 	return minimumNumSum
 }
 
-func main() {
-	fmt.Println(minSubArrayLen(7, []int{2, 3, 1, 2, 4, 3}))
-	fmt.Println(minSubArrayLen(4, []int{1, 4, 4}))
-	fmt.Println(minSubArrayLen(11, []int{1, 1, 1, 1, 1, 1, 1, 1}))
-	fmt.Println(minSubArrayLen(11, []int{1, 1, 1, 1, 1, 1, 1, 1, 2, 6, 4, 1}))
+// func main() {
+// 	fmt.Println(minSubArrayLen(7, []int{2, 3, 1, 2, 4, 3}))
+// 	fmt.Println(minSubArrayLen(4, []int{1, 4, 4}))
+// 	fmt.Println(minSubArrayLen(11, []int{1, 1, 1, 1, 1, 1, 1, 1}))
+// 	fmt.Println(minSubArrayLen(11, []int{1, 1, 1, 1, 1, 1, 1, 1, 2, 6, 4, 1}))
 
-	fmt.Println()
+// 	fmt.Println()
 
-	fmt.Println(minSubArrayLen2(7, []int{2, 3, 1, 2, 4, 3}))
-	fmt.Println(minSubArrayLen2(4, []int{1, 4, 4}))
-	fmt.Println(minSubArrayLen2(11, []int{1, 1, 1, 1, 1, 1, 1, 1}))
-	fmt.Println(minSubArrayLen2(11, []int{1, 1, 1, 1, 1, 1, 1, 1, 2, 6, 4, 1}))
-}
+// 	fmt.Println(minSubArrayLen2(7, []int{2, 3, 1, 2, 4, 3}))
+// 	fmt.Println(minSubArrayLen2(4, []int{1, 4, 4}))
+// 	fmt.Println(minSubArrayLen2(11, []int{1, 1, 1, 1, 1, 1, 1, 1}))
+// 	fmt.Println(minSubArrayLen2(11, []int{1, 1, 1, 1, 1, 1, 1, 1, 2, 6, 4, 1}))
+// }
 
 // totalSum := 0
 // 	left := 0
