@@ -82,7 +82,6 @@ func findSubstring(s string, words []string) []int {
 		counter++
 		step := 3
 		for i := k * counter; ; i-- {
-
 			checkWordTotal -= int(s[i-1])
 			step--
 			if step == 0 {
