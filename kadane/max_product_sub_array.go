@@ -41,9 +41,17 @@ func maxProduct(nums []int) int {
 	maxProductSubarray := nums[0]
 	currProductSubarray := nums[0]
 
+	currMinProductSubarray := nums[0]
+
 	for i := 1; i < len(nums); i++ {
+
+		if nums[i] < 0 {
+			currMinProductSubarray, currProductSubarray = currProductSubarray, currMinProductSubarray
+		}
 		currProductSubarray = max3(nums[i], currProductSubarray*nums[i])
+		currMinProductSubarray = min1(nums[i], currProductSubarray*nums[i])
 		maxProductSubarray = max3(currProductSubarray, maxProductSubarray)
+
 	}
 	return maxProductSubarray
 }
@@ -55,8 +63,14 @@ func max3(num1, num2 int) int {
 	return num2
 }
 
+func min1(num1, num2 int) int {
+	if num1 < num2 {
+		return num1
+	}
+	return num2
+}
+
 func main() {
 	fmt.Println(maxProduct([]int{2, 3, -2, 4}))
 	fmt.Println(maxProduct([]int{-2, 0, -1}))
-	fmt.Println(maxProduct([]int{-3, -2, -3}))
 }
