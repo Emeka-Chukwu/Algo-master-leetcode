@@ -32,3 +32,28 @@ package main
 // -104 <= nums[i] <= 104
 
 // Follow up: If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.
+
+func maxSubArray(nums []int) int {
+	maxSum := nums[0]
+	currSum := nums[0]
+	for i := 1; i < len(nums); i++ {
+		currSum = max(nums[i], currSum+nums[i])
+		maxSum = max(maxSum, currSum)
+	}
+	return maxSum
+
+}
+
+func max(num1, num2 int) int {
+	if num1 > num2 {
+		return num1
+	} else {
+		return num2
+	}
+}
+
+// func main() {
+// 	fmt.Println(maxSubArray([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4}))
+// 	fmt.Println(maxSubArray([]int{1}))
+// 	fmt.Println(maxSubArray([]int{5, 4, -1, 7, 8}))
+// }
