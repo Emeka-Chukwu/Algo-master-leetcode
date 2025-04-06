@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // 152. Maximum Product Subarray
 // Medium
 // Topics
@@ -70,7 +68,7 @@ func min1(num1, num2 int) int {
 	return num2
 }
 
-func main() {
-	fmt.Println(maxProduct([]int{2, 3, -2, 4}))
-	fmt.Println(maxProduct([]int{-2, 0, -1}))
-}
+// func main() {
+// 	fmt.Println(maxProduct([]int{2, 3, -2, 4}))
+// 	fmt.Println(maxProduct([]int{-2, 0, -1}))
+// }
