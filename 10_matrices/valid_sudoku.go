@@ -155,4 +155,41 @@ func main() {
 	}
 	fmt.Println(isValidSudoku(board1))
 	fmt.Println(isValidSudoku(board2))
+	fmt.Println()
+
+	fmt.Println(isValidSudoku1(board1))
+	fmt.Println(isValidSudoku1(board2))
+}
+
+func isValidSudoku1(board [][]byte) bool {
+
+	var rows []map[byte]bool = make([]map[byte]bool, 9)
+	var cols []map[byte]bool = make([]map[byte]bool, 9)
+	var boxIndex []map[byte]bool = make([]map[byte]bool, 9)
+
+	for i := 0; i < len(board); i++ {
+		rows[i] = map[byte]bool{}
+		cols[i] = map[byte]bool{}
+		boxIndex[i] = map[byte]bool{}
+	}
+
+	for i := 0; i < 9; i++ {
+		for j := 0; j < 9; j++ {
+			num := board[i][j]
+			if num == '.' {
+				continue
+			}
+			boxPos := (i/3)*3 + j/3
+			if cols[i][num] || rows[j][num] || boxIndex[boxPos][num] {
+				// fmt.Println(cols[i][num], rows[j][num], boxIndex[boxPos][num])
+				return false
+			}
+
+			cols[i][num] = true
+			rows[j][num] = true
+			boxIndex[boxPos][num] = true
+		}
+	}
+	return true
+
 }
