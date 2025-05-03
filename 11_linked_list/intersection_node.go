@@ -102,23 +102,18 @@ func getIntersectionNode(headA, headB *ListNode) *ListNode {
 	return nil
 }
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
+// func main() {
+// 	listA := &ListNode{Val: 4}
+// 	listA.Next = &ListNode{Val: 1}
+// 	listA.Next.Next = &ListNode{Val: 8}
+// 	listA.Next.Next.Next = &ListNode{Val: 4}
+// 	listA.Next.Next.Next.Next = &ListNode{Val: 5}
 
-func main() {
-	listA := &ListNode{Val: 4}
-	listA.Next = &ListNode{Val: 1}
-	listA.Next.Next = &ListNode{Val: 8}
-	listA.Next.Next.Next = &ListNode{Val: 4}
-	listA.Next.Next.Next.Next = &ListNode{Val: 5}
-
-	listB := &ListNode{Val: 5}
-	listB.Next = &ListNode{Val: 6}
-	listB.Next.Next = &ListNode{Val: 1}
-	listB.Next.Next.Next = listA.Next.Next
-	listB.Next.Next.Next.Next = listA.Next.Next.Next
-	listB.Next.Next.Next.Next.Next = listA.Next.Next.Next.Next
-	fmt.Println(getIntersectionNode(listA, listB))
-}
+// 	listB := &ListNode{Val: 5}
+// 	listB.Next = &ListNode{Val: 6}
+// 	listB.Next.Next = &ListNode{Val: 1}
+// 	listB.Next.Next.Next = listA.Next.Next
+// 	listB.Next.Next.Next.Next = listA.Next.Next.Next
+// 	listB.Next.Next.Next.Next.Next = listA.Next.Next.Next.Next
+// 	fmt.Println(getIntersectionNode(listA, listB))
+// }
