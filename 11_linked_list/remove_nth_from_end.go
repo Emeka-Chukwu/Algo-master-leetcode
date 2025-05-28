@@ -62,10 +62,15 @@ func removeNthFromEnd(head *ListNode, n int) *ListNode {
 	return dummy.Next
 }
 
-func main() {
-	value := sliceToList([]int{1, 2, 3, 4, 5})
-	fmt.Println(removeNthFromEnd(value, 2))
-}
+// func main() {
+// value := sliceToList([]int{1, 2, 3, 4, 5})
+// 	// fmt.Println(removeNthFromEnd(value, 2))
+// 	// fmt.Println("========== ============= ============= =========== ========= ==========")
+// 	// fmt.Println(removeNthFromEnd1(value, 2))
+// 	fmt.Println("========== ============= ============= =========== ========= ==========")
+// 	fmt.Println(removeNthFromEnd3(value, 2))
+
+// }
 
 func sliceToList(nums []int) *ListNode {
 	if len(nums) == 0 {
@@ -78,10 +83,10 @@ func sliceToList(nums []int) *ListNode {
 	}
 }
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
+// type ListNode struct {
+// 	Val  int
+// 	Next *ListNode
+// }
 
 func removeNthFromEnd1(head *ListNode, n int) *ListNode {
 
@@ -129,4 +134,34 @@ func removeNthFromEnd2(head *ListNode, n int) *ListNode {
 	current.Next = current.Next.Next
 	return head
 
+}
+
+func removeNthFromEnd3(head *ListNode, n int) *ListNode {
+	currentIndex := 1
+	var dummy *ListNode = &ListNode{Next: head}
+	current := dummy
+
+	for a := head; a.Next != nil; a = a.Next {
+
+		// fmt.Println(current)
+		// fmt.Println(current.Next)
+		fmt.Println(currentIndex, "index")
+		if currentIndex == 6-n {
+			current.Next = current.Next.Next
+			fmt.Println(current, "kkkkhhhh")
+			fmt.Println(current.Next, "kkkkhhhhj")
+			fmt.Println(current.Next.Val, "0000000")
+			return current
+		} else {
+			current = current.Next
+			fmt.Println(current, current.Val)
+		}
+		currentIndex++
+	}
+	fmt.Println(current, "kkkk")
+	for a := current; a.Next != nil; a = a.Next {
+		fmt.Println(a.Val, "llllllll")
+	}
+
+	return dummy.Next
 }

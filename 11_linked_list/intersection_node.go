@@ -76,24 +76,26 @@ import "fmt"
 
 // Copyright ©️ 2025 LeetCode All rights reserved
 
-/**
- * Definition for singly-linked list.
- * type ListNode struct {
- *     Val int
- *     Next *ListNode
- * }
- */
+/*
+*
+  - Definition for singly-linked list.
+
+//  * type ListNode struct {
+//  *     Val int
+//  *     Next *ListNode
+//  * }
+*/
 func getIntersectionNode(headA, headB *ListNode) *ListNode {
 
 	var interSectionChecker map[*ListNode]bool = make(map[*ListNode]bool)
 	for a := headA; a.Next != nil; a = a.Next {
-		fmt.Println(a, "o")
+		fmt.Println(a, "o", a.Val)
 		interSectionChecker[a] = true
 	}
 	fmt.Println(interSectionChecker)
 
 	for b := headB; b.Next != nil; b = b.Next {
-		fmt.Println(b, "k")
+		fmt.Println(b, "k", b.Val)
 		if _, found := interSectionChecker[b]; found {
 			return b
 			// break
@@ -116,4 +118,9 @@ func getIntersectionNode(headA, headB *ListNode) *ListNode {
 // 	listB.Next.Next.Next.Next = listA.Next.Next.Next
 // 	listB.Next.Next.Next.Next.Next = listA.Next.Next.Next.Next
 // 	fmt.Println(getIntersectionNode(listA, listB))
+// }
+
+// type ListNode struct {
+// 	Val  int
+// 	Next *ListNode
 // }
